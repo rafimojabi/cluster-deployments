@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goapp
+spec:
+  template:
+    spec:
+      containers:
+      - name: goapp
+        image: rafimojabi/tools:#IMAGE
+        ports:
+        - containerPort: 8080

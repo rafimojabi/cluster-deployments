@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      deployment: goapp
+  template:
+    metadata:
+      labels:
+        deployment: goapp
+    spec:
+      containers:
+      - name: goapp
+        image: rafimojabi/tools:latest
+        ports:
+        - containerPort: 8080
+        
