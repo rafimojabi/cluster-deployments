@@ -1,10 +1,13 @@
 namePrefix: dev-
 namespace: dev
 commonLabels:
-  environment: dev
-  
+  app: dev-goapp
+
+metadata:
+  name: dev-goapp
 
 resources:
 - ../../base/
 patchesStrategicMerge:
 - dev-deployment.yml
+- dev-service.yml
