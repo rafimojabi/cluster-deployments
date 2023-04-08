@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         deployment: goapp
+        app: goapp
     spec:
       containers:
       - name: goapp
