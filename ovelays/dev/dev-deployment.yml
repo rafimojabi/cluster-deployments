@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: rafimojabi/tools:#IMAGE
+        image: rafimojabi/tools:
